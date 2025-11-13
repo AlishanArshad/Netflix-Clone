@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titan+One&display=swap');
+
 * {
     padding: 0;
     margin: 0;
 }
-body{
+
+body {
     background-color: black;
 }
+
 .main {
     background-image: url(assets/images/bg.jpg);
     height: 80vh;
@@ -26,7 +29,7 @@ body{
 
 nav {
     display: flex;
-    max-width: 80vw;
+    max-width: 72vw;
     margin: auto;
     align-items: center;
     justify-content: space-between;
@@ -44,7 +47,8 @@ nav button {
     position: relative;
     z-index: 1;
 }
-div .hero{
+
+div .hero {
     font-family: 'Martel Sans', sans-serif;
     height: calc(100% - 62px);
     display: flex;
@@ -58,23 +62,66 @@ div .hero{
     padding: 0px 30px;
 
 }
-.hero> :first-child{
+
+.hero> :first-child {
     font-weight: bolder;
     font-size: 48px;
     gap: 23px;
     text-align: center;
 }
-.hero> :nth-child(2){
+
+.hero> :nth-child(2) {
     font-weight: 400;
     font-size: 24px;
     text-align: center;
 }
-.hero> :nth-child(3){
+
+.hero> :nth-child(3) {
     font-weight: 400;
     font-size: 20px;
     text-align: center;
 }
-.sepration{
+
+.sepration {
     height: 7px;
     background-color: rgb(75, 74, 74);
+    
+}
+
+.signIn {
+    background-color: red;
+    border: none;
+    padding: 9px 17px;
+    border-radius: 3px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+}
+
+.inputBox {
+    padding: 3px 8px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.inp {
+    padding: 3px 24px;
+    width: 300px;
+    font-size: 20px;
+    border-radius: 3px;
+    background-color: rgba(23, 23, 23, 0.781);
+}
+
+.inpBtn {
+    padding: 3px 24px;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius: 3px;
 }
