@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -8,48 +10,55 @@ body {
     background-color: black;
 }
 
-.main {
-    background-image: url(assets/images/bg.jpg);
-    height: 80vh;
-    background-position: center center;
-    background-size: cover ;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
-.main .box {
-    height: 80vh;
-    width: 100%;
-    background-color: black;
-    opacity: 0.6;
-    position: absolute;
-    top: 0;
-}
-
 nav {
+    color: white;
+    padding: 28px;
     display: flex;
-    max-width: 72vw;
-    margin: auto;
-    align-items: center;
     justify-content: space-between;
-    height: 62px;
 }
 
-nav img {
-    color: red;
-    width: 120px;
-    position: relative;
-    z-index: 1;
+nav .logo {
+    width: 8rem;
+    max-width: 100%;
+
 }
 
-nav button {
-    position: relative;
-    z-index: 1;
+nav .logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+nav .signIn {
+    background-color: #e50914;
+    color: white;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    min-height: 1rem;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+nav .signIn:hover {
+    background-color: #fc5058;
+}
+
+.top-section {
+    background-image: url(assets/images/bg.jpg);
+    background-size: cover;
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .hero {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    height: calc(100% - 62px);
+    font-family: "Boldonse", system-ui;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,47 +68,12 @@ nav button {
     text-align: center;
     gap: 12px;
     padding: 0px 30px;
+    border: 2px solid red;
+    min-width: 80vw;
 
 }
-
-.hero> :first-child {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: bolder;
-    font-size: 46px;
-    gap: 23px;
-    text-align: center;
-}
-
-.hero> :nth-child(2) {
-    font-weight: 400;
-    font-size: 24px;
-    text-align: center;
-}
-
-.hero> :nth-child(3) {
-    font-weight: 400;
-    font-size: 20px;
-    text-align: center;
-}
-
-.sepration {
-    height: 7px;
-    background-color: rgb(75, 74, 74);
-
-}
-
-.signIn {
-    background-color: red;
-    border: none;
-    padding: 9px 17px;
-    border-radius: 3px;
-    font-weight: 600;
-    cursor: pointer;
-    color: white;
-}
-
 .inputBox {
-    padding: 15px 4px;
+    padding: 1rem;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -119,12 +93,12 @@ nav button {
 }
 
 .inpBtn {
-    padding: 17px 20px;
-    font-size: 17px;
-    background-color: red;
+    background-color: #e50914;
     color: white;
+    padding: 1rem;
     border: none;
-    cursor: pointer;
-    font-weight: 700;
-    border-radius: 3px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    white-space: nowrap;
 }
